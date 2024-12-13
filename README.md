@@ -1,15 +1,15 @@
 # Beach Activity Level Prediction
 
-This package uses ZenML and MLflow to train and track a model that predicts the activity level at a beach based on various environmental factors.
+This package uses MLflow to track a model that predicts the activity level at a beach based on various environmental factors.
 
 ## Setup
 
 1. Install the required packages:
     ```bash
-    pip install zenml mlflow torch pandas scikit-learn
+    pip install mlflow torch pandas scikit-learn
     ```
 
-2. Run the setup script to initialize ZenML and start the MLflow server:
+2. Run the setup script to initialize and start the MLflow server:
     ```bash
     python setup.py
     ```
@@ -26,5 +26,5 @@ This will load the data, train the model, and log the metrics and model artifact
 
 1. Clone the repository.
 2. Install the required packages.
-3. Run `setup.py` to set up ZenML and MLflow.
+3. Run `setup.py` to set up MLflow.
 4. Run `pipeline.py` to execute the pipeline.
