@@ -9,10 +9,10 @@ from predict import predict_activity_level
 
 # Set up Django environment
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "backend.backend.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "backend.settings")
 django.setup()
 
-from backend.seasense_backend.models import BeachPrediction
+from seasense_backend.models import BeachPrediction
 
 
 # List of beaches
