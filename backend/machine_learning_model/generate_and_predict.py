@@ -6,6 +6,7 @@ from datetime import datetime
 import random
 import pandas as pd
 from predict import predict_activity_level  
+from model import ActivityLevelClassifier
 
 # Set up Django environment
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
