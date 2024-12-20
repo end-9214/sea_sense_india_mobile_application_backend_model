@@ -5,20 +5,14 @@ import time
 from datetime import datetime
 import random
 import pandas as pd
-from predict import predict_activity_level
+from predict import predict_activity_level  
 
-# Add the root directory and backend directory to sys.path
-project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.append(project_root)  # Add the root project directory
-sys.path.append(os.path.join(project_root, "backend"))
-
-# Set the Django settings module
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "backend.settings")
-
+# Set up Django environment
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "backend.backend.settings")
 django.setup()
 
-# Now, import the required model
-from seasense_backend.models import BeachPrediction
+from backend.seasense_backend.models import BeachPrediction
 
 
 # List of beaches

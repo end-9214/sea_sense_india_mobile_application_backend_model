@@ -92,5 +92,5 @@ def train_model(X_train, y_train, X_test, y_test):
         mlflow.pytorch.log_model(model, "model", input_example=example_input, pip_requirements=["torch==2.4.1+cpu"])
 
 if __name__ == "__main__":
-    X_train, X_test, y_train, y_test = load_data('historical_beach_data.csv')
+    X_train, X_test, y_train, y_test = load_data('./machine_learning_model/historical_beach_data.csv')
     train_model(X_train, y_train, X_test, y_test)
